@@ -82,6 +82,8 @@ Enter a Password that you will remember.
 ```mysql –uroot –p```(password you created)
 
 The Screen underneath should appear
+![example2](https://cloud.githubusercontent.com/assets/20311571/16925360/d442c6d8-4cf1-11e6-92d5-c390f7636e5d.png)
+
 
 ```create database mydata;```
 
