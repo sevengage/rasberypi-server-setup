@@ -141,5 +141,6 @@ To see if varnish is working type
 ```curl –I http://localhost```
 
 And the screen should resemble the one below
+![example3](https://cloud.githubusercontent.com/assets/20311571/16925437/345e2fc6-4cf2-11e6-8e3d-4b24c0205983.png)
 
 
