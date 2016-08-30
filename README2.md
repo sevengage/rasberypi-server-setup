@@ -44,6 +44,67 @@ Keep everything the same but add/or change the things in the screenshot
 
 ![screen shot 2016-08-29 at 10 29 36 pm](https://cloud.githubusercontent.com/assets/20311571/18074455/b839f1d6-6e3a-11e6-93ac-4562039c2baa.png)
 
+Heres the specifc lines that you should change or edit
+
+
+[...]
+server {
+        listen   80;
+     
+
+        root /usr/share/nginx/www;
+        index index.php index.html index.htm;
+
+        server_name example.com;
+
+        location / {
+                try_files $uri $uri/ /index.html;
+        }
+
+        error_page 404 /404.html;
+
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+              root /usr/share/nginx/www;
+        }
+
+        # pass the PHP scripts to FastCGI server listening on the php-fpm socket
+        location ~ \.php$ {
+                try_files $uri =404;
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+                fastcgi_index index.php;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                include fastcgi_params;
+                
+        }```
+        
+## VARNISH 
+
+First install Varnish 
+
+```sudo apt-get install varnish```
+
+Next go here
+
+```sudo nano /etc/default/varnish```
+
+and scroll down to daeman ops 2 and change the port to 80
+
+```DAEMON_OPTS="-a :80 \```
+
+
+  
+
+
+
+
+
+
+
+
+ 
+ 
+
 
 
 
