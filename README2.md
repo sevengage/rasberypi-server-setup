@@ -98,6 +98,37 @@ Go back to the nginx default and change the server listening port to 8080
 
 ```sudo nano /etc/nginx/sites-available/default```
 
+![screen shot 2016-08-29 at 11 49 07 pm](https://cloud.githubusercontent.com/assets/20311571/18075496/458ebb72-6e43-11e6-9185-5f88a92c517a.png)
+
+If your are using systemd the file /lib/systemd/system/varnish.service will exist, change the Varnish systemd service to use port 80. If not restart nginx and then restart varnish.
+
+```sudo mkdir -p /etc/systemd/system/varnish.service.d```
+
+```sudo nano /etc/systemd/system/varnish.service.d/local.conf```
+
+Paste this in there 
+
+```[Service]```
+
+```ExecStart```
+```ExecStart=/usr/sbin/varnishd -a :80 -T localhost:6082 -f /etc/varnish/default.vcl -S /etc/varnish/secret -s malloc,256m```
+
+ now restart everything in this order
+
+```sudo systemctl daemon-reload```
+```sudo systemctl enable varnish```
+```sudo service nginx restart```
+```sudo service varnish restart```
+
+To check to see if nginx and varnish are running together curl the Ip
+
+```curl -I http://localhost(or your ip)```
+
+You should see this screen 
+
+
+
+
 
   
 
