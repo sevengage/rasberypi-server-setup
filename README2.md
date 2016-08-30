@@ -26,15 +26,17 @@ Next install PHP
 
 Next we need to make a change in some configuration 
 
-sudo nano /etc/php5/fpm/php.ini
+```sudo nano /etc/php5/fpm/php.ini```
  
 Find the line, cgi.fix_pathinfo=1, and change the 1 to 0.
 
 Restart PHP
 
+```sudo service php5-fpm restart```
+
 Next we need to make some changes in the nginx configuration 
 
-sudo nano /etc/nginx/sites-available/default
+```sudo nano /etc/nginx/sites-available/default```
 
 Keep everything the same but add/or change the things in the screenshot 
 
