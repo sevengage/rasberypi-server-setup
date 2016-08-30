@@ -40,13 +40,17 @@ Keep everything the same but add/or change the things in the screenshot
 
 ![screen shot 2016-08-29 at 10 28 31 pm](https://cloud.githubusercontent.com/assets/20311571/18074313/b3659ea4-6e39-11e6-93c5-a4229185c782.png)
 
+![screen shot 2016-08-29 at 10 29 36 pm](https://cloud.githubusercontent.com/assets/20311571/18074455/b839f1d6-6e3a-11e6-93ac-4562039c2baa.png)
 
 
 
 
 
 
-```sudo service php5-fpm restart```
+
+
+
+
 
 
  
