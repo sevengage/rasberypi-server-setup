@@ -92,6 +92,12 @@ and scroll down to daeman ops 2 and change the port to 80
 
 ```DAEMON_OPTS="-a :80 \```
 
+![screen shot 2016-08-29 at 11 31 57 pm](https://cloud.githubusercontent.com/assets/20311571/18075223/dcea499e-6e40-11e6-80bf-1a4a237931b7.png)
+
+Go back to the nginx default and change the server listening port to 8080
+
+```sudo nano /etc/nginx/sites-available/default```
+
 
   
 
