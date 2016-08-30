@@ -108,13 +108,20 @@ If your are using systemd the file /lib/systemd/system/varnish.service will exis
 
 Paste this in there 
 
+![screen shot 2016-08-30 at 12 05 14 am](https://cloud.githubusercontent.com/assets/20311571/18075735/7d27aed4-6e45-11e6-9737-5642490fd644.png)
+
+
 
  now restart everything in this order
 
 ```sudo systemctl daemon-reload```
+
 ```sudo systemctl enable varnish```
+
 ```sudo service nginx restart```
+
 ```sudo service varnish restart```
+
 
 To check to see if nginx and varnish are running together curl the Ip
 
