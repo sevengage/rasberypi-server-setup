@@ -129,6 +129,9 @@ To check to see if nginx and varnish are running together curl the Ip
 
 You should see this screen 
 
+![screen shot 2016-08-30 at 12 00 06 am](https://cloud.githubusercontent.com/assets/20311571/18075765/ce9ed92c-6e45-11e6-9b9e-78fbd2d5b387.png)
+
+
 
 
 
