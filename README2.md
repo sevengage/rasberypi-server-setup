@@ -3,6 +3,7 @@
 Install MYSQL 
 
 ``` sudo apt-get install mysql-server php5-mysql```
+
 Set the root password and make sure you remember it.
 Next type in this 
 
@@ -18,4 +19,23 @@ start nginx
 
 ```sudo service nginx start```
 
-Check your localhost page and you should see this page 
+Check your localhost page and you should see this page, or type in the raspbery's pi ip in your browser
+Next install PHP
+
+```sudo apt-get install php5-fpm```
+
+Next we need to make a change in some configuration 
+
+sudo nano /etc/php5/fpm/php.ini
+ 
+Find the line, cgi.fix_pathinfo=1, and change the 1 to 0.
+
+Restart PHP
+
+```sudo service php5-fpm restart```
+
+
+ 
+
+
+
