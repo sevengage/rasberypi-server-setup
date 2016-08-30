@@ -108,10 +108,6 @@ If your are using systemd the file /lib/systemd/system/varnish.service will exis
 
 Paste this in there 
 
-```[Service]```
-
-```ExecStart```
-```ExecStart=/usr/sbin/varnishd -a :80 -T localhost:6082 -f /etc/varnish/default.vcl -S /etc/varnish/secret -s malloc,256m```
 
  now restart everything in this order
 
